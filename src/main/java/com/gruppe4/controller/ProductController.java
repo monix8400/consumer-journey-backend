@@ -70,7 +70,7 @@ public class ProductController {
     @PostMapping("/dmn/{decisionKey}")
     public ResponseEntity<List<Map<String, Object>>> evaluateDMN(@PathVariable String decisionKey, @RequestBody Map<String, Object> variables) {
         // Load the DMN file from resources
-        Resource resource = resourceLoader.getResource("classpath:betterdiag.dmn");
+        Resource resource = resourceLoader.getResource("classpath:betterdiagFinal.dmn");
         InputStream is = null;
         try {
             is = resource.getInputStream();

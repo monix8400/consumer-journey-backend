@@ -1,0 +1,1481 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="https://www.omg.org/spec/DMN/20191111/MODEL/" xmlns:dmndi="https://www.omg.org/spec/DMN/20191111/DMNDI/" xmlns:dc="http://www.omg.org/spec/DMN/20180521/DC/" xmlns:di="http://www.omg.org/spec/DMN/20180521/DI/" id="gruppe4" name="consumerJourney" namespace="http://camunda.org/schema/1.0/dmn" exporter="Camunda Modeler" exporterVersion="4.11.0">
+  
+  <decision id="immunity_lvl" name="immunity_lvl">
+    <informationRequirement>
+      <requiredInput href="#input_age" />
+    </informationRequirement>
+    <informationRequirement>
+      <requiredInput href="#input_season" />
+    </informationRequirement>
+    <decisionTable id="decisionTable_1" hitPolicy="FIRST">
+      <input id="input_age" label="Age">
+        <inputExpression id="inputExpression_age" typeRef="string">
+          <text>Age</text>
+        </inputExpression>
+      </input>
+      <input id="input_season" label="Season">
+        <inputExpression id="inputExpression_season" typeRef="string">
+          <text>Season</text>
+        </inputExpression>
+      </input>
+      <output id="output_immunity_lvl" label="Immunity Level" name="Immunity Level" typeRef="string" />
+      <rule id="rule_1">
+        <inputEntry id="inputEntry_1age">
+          <text>"Toddler"</text>
+        </inputEntry>
+        <inputEntry id="inputEntry_2season">
+          <text>"Spring"</text>
+        </inputEntry>
+        <outputEntry id="outputEntry_1imun">
+          <text>"low"</text>
+        </outputEntry>
+      </rule>
+      <rule id="rule_2">
+        <inputEntry id="inputEntry_3age">
+          <text>"Toddler"</text>
+        </inputEntry>
+        <inputEntry id="inputEntry_4season">
+          <text>"Summer"</text>
+        </inputEntry>
+        <outputEntry id="outputEntry_2imun">
+          <text>"medium"</text>
+        </outputEntry>
+      </rule>
+      <rule id="rule_3">
+        <inputEntry id="inputEntry_5age">
+          <text>"Toddler"</text>
+        </inputEntry>
+        <inputEntry id="inputEntry_6season">
+          <text>"Autumn"</text>
+        </inputEntry>
+        <outputEntry id="outputEntry_3imun">
+          <text>"low"</text>
+        </outputEntry>
+      </rule>
+      <rule id="rule_4">
+        <inputEntry id="inputEntry_7age">
+          <text>"Toddler"</text>
+        </inputEntry>
+        <inputEntry id="inputEntry_8season">
+          <text>"Winter"</text>
+        </inputEntry>
+        <outputEntry id="outputEntry_4imun">
+          <text>"low"</text>
+        </outputEntry>
+      </rule>
+      <rule id="rule_5">
+        <inputEntry id="inputEntry_9age">
+          <text>"Child"</text>
+        </inputEntry>
+        <inputEntry id="inputEntry_10season">
+          <text>"Spring"</text>
+        </inputEntry>
+        <outputEntry id="outputEntry_5imun">
+          <text>"low"</text>
+        </outputEntry>
+      </rule>
+      <rule id="rule_6">
+        <inputEntry id="inputEntry_11age">
+          <text>"Child"</text>
+        </inputEntry>
+        <inputEntry id="inputEntry_12season">
+          <text>"Summer"</text>
+        </inputEntry>
+        <outputEntry id="outputEntry_6imun">
+          <text>"high"</text>
+        </outputEntry>
+      </rule>
+      <rule id="rule_7">
+        <inputEntry id="inputEntry_13age">
+          <text>"Child"</text>
+        </inputEntry>
+        <inputEntry id="inputEntry_14season">
+          <text>"Autumn"</text>
+        </inputEntry>
+        <outputEntry id="outputEntry_7imun">
+          <text>"medium"</text>
+        </outputEntry>
+      </rule>
+      <rule id="rule_8">
+        <inputEntry id="inputEntry_15age">
+          <text>"Child"</text>
+        </inputEntry>
+        <inputEntry id="inputEntry_16season">
+          <text>"Winter"</text>
+        </inputEntry>
+        <outputEntry id="outputEntry_8imun">
+          <text>"low"</text>
+        </outputEntry>
+      </rule>
+      <rule id="rule_9">
+        <inputEntry id="inputEntry_17age">
+          <text>"Teenager"</text>
+        </inputEntry>
+        <inputEntry id="inputEntry_18season">
+          <text>"Spring"</text>
+        </inputEntry>
+        <outputEntry id="outputEntry_9imun">
+          <text>"medium"</text>
+        </outputEntry>
+      </rule>
+      <rule id="rule_11">
+        <inputEntry id="inputEntry_21age">
+          <text>"Teenager"</text>
+        </inputEntry>
+        <inputEntry id="inputEntry_22season">
+          <text>"Summer"</text>
+        </inputEntry>
+        <outputEntry id="outputEntry_11imun">
+          <text>"high"</text>
+        </outputEntry>
+      </rule>
+      <rule id="rule_12">
+        <inputEntry id="inputEntry_23age">
+          <text>"Teenager"</text>
+        </inputEntry>
+        <inputEntry id="inputEntry_24season">
+          <text>"Autumn"</text>
+        </inputEntry>
+        <outputEntry id="outputEntry_12imun">
+          <text>"high"</text>
+        </outputEntry>
+      </rule>
+      <rule id="rule_13">
+        <inputEntry id="inputEntry_25age">
+          <text>"Teenager"</text>
+        </inputEntry>
+        <inputEntry id="inputEntry_26season">
+          <text>"Winter"</text>
+        </inputEntry>
+        <outputEntry id="outputEntry_13imun">
+          <text>"medium"</text>
+        </outputEntry>
+      </rule>
+      <rule id="rule_14">
+        <inputEntry id="inputEntry_27age">
+          <text>"Adult"</text>
+        </inputEntry>
+        <inputEntry id="inputEntry_28season">
+          <text>"Spring"</text>
+        </inputEntry>
+        <outputEntry id="outputEntry_14imun">
+          <text>"medium"</text>
+        </outputEntry>
+      </rule>
+      <rule id="rule_15">
+        <inputEntry id="inputEntry_29age">
+          <text>"Adult"</text>
+        </inputEntry>
+        <inputEntry id="inputEntry_30season">
+          <text>"Summer"</text>
+        </inputEntry>
+        <outputEntry id="outputEntry_15imun">
+          <text>"medium"</text>
+        </outputEntry>
+      </rule>
+      <rule id="rule_16">
+        <inputEntry id="inputEntry_31age">
+          <text>"Adult"</text>
+        </inputEntry>
+        <inputEntry id="inputEntry_32season">
+          <text>"Autumn"</text>
+        </inputEntry>
+        <outputEntry id="outputEntry_16imun">
+          <text>"low"</text>
+        </outputEntry>
+      </rule>
+      <rule id="rule_17">
+        <inputEntry id="inputEntry_33age">
+          <text>"Adult"</text>
+        </inputEntry>
+        <inputEntry id="inputEntry_34season">
+          <text>"Winter"</text>
+        </inputEntry>
+        <outputEntry id="outputEntry_17imun">
+          <text>"low"</text>
+        </outputEntry>
+      </rule>
+      <rule id="rule_18">
+        <inputEntry id="inputEntry_35age">
+          <text>"Senior"</text>
+        </inputEntry>
+        <inputEntry id="inputEntry_36season">
+          <text>"Spring"</text>
+        </inputEntry>
+        <outputEntry id="outputEntry_18imun">
+          <text>"low"</text>
+        </outputEntry>
+      </rule>
+      <rule id="rule_19">
+        <inputEntry id="inputEntry_37age">
+          <text>"Senior"</text>
+        </inputEntry>
+        <inputEntry id="inputEntry_38season">
+          <text>"Summer"</text>
+        </inputEntry>
+        <outputEntry id="outputEntry_19imun">
+          <text>"low"</text>
+        </outputEntry>
+      </rule>
+      <rule id="rule_20">
+        <inputEntry id="inputEntry_39age">
+          <text>"Senior"</text>
+        </inputEntry>
+        <inputEntry id="inputEntry_40season">
+          <text>"Autumn"</text>
+        </inputEntry>
+        <outputEntry id="outputEntry_20imun">
+          <text>"low"</text>
+        </outputEntry>
+      </rule>
+      <rule id="rule_21">
+        <inputEntry id="inputEntry_41age">
+          <text>"Senior"</text>
+        </inputEntry>
+        <inputEntry id="inputEntry_42season">
+          <text>"Winter"</text>
+        </inputEntry>
+        <outputEntry id="outputEntry_21imun">
+          <text>"low"</text>
+        </outputEntry>
+      </rule>
+      <!-- Add more rules here if needed -->
+    </decisionTable>
+  </decision>
+
+
+  <decision id="individual_preference" name="individual_preference">
+    <informationRequirement>
+      <requiredInput href="#input_honeyType" />
+    </informationRequirement>
+    <informationRequirement>
+      <requiredInput href="#input_skinType" />
+    </informationRequirement>
+    <decisionTable id="decisionTable_ip" hitPolicy="FIRST">
+      <input id="input_honeyType" label="Honey Type">
+        <inputExpression id="inputExpression_honey_type" typeRef="string">
+          <text>HoneyType</text>
+        </inputExpression>
+      </input>
+      <input id="input_skinType" label="Skin Type">
+        <inputExpression id="inputExpression_skin_type" typeRef="string">
+          <text>SkinType</text>
+        </inputExpression>
+      </input>
+      <output id="output_individual_preference" label="Individual Preference" name="Individual Preference" typeRef="string" />
+      <rule id="rule_22">
+        <inputEntry id="inputEntry_1honey">
+          <text>"BlutenHonig"</text>
+        </inputEntry>
+        <inputEntry id="inputEntry_2skin">
+          <text>"allergenic"</text>
+        </inputEntry>
+        <outputEntry id="outputEntry_1type">
+          <text>"HipoAllergenic-Floral Type"</text>
+        </outputEntry>
+      </rule>
+      <rule id="rule_23">
+        <inputEntry id="inputEntry_3honey">
+          <text>"Akazienhonig"</text>
+        </inputEntry>
+        <inputEntry id="inputEntry_4skin">
+          <text>"allergenic"</text>
+        </inputEntry>
+        <outputEntry id="outputEntry_2type">
+          <text>"HipoAllergenic-Leaves Type"</text>
+        </outputEntry>
+      </rule>
+      <rule id="rule_24">
+        <inputEntry id="inputEntry_5honey">
+          <text>"Akazienhonig"</text>
+        </inputEntry>
+        <inputEntry id="inputEntry_6skin">
+          <text>"oily"</text>
+        </inputEntry>
+        <outputEntry id="outputEntry_3type">
+          <text>"Oilfree-Leave Type"</text>
+        </outputEntry>
+      </rule>
+      <rule id="rule_25">
+        <inputEntry id="inputEntry_7honey">
+          <text>"BlutenHonig"</text>
+        </inputEntry>
+        <inputEntry id="inputEntry_8skin">
+          <text>"oily"</text>
+        </inputEntry>
+        <outputEntry id="outputEntry_4type">
+          <text>"Oilfree-Floral Type"</text>
+        </outputEntry>
+      </rule>
+      <rule id="rule_26">
+        <inputEntry id="inputEntry_9honey">
+          <text>"BlutenHonig"</text>
+        </inputEntry>
+        <inputEntry id="inputEntry_10skin">
+          <text>"dry"</text>
+        </inputEntry>
+        <outputEntry id="outputEntry_5type">
+          <text>"HydroFloral Type"</text>
+        </outputEntry>
+      </rule>
+      <rule id="rule_27">
+        <inputEntry id="inputEntry_11honey">
+          <text>"Akazienhonig"</text>
+        </inputEntry>
+        <inputEntry id="inputEntry_12skin">
+          <text>"dry"</text>
+        </inputEntry>
+        <outputEntry id="outputEntry_6type">
+          <text>"HydroLeaves Type"</text>
+        </outputEntry>
+      </rule>
+      <rule id="rule_28">
+        <inputEntry id="inputEntry_13honey">
+          <text>"Akazienhonig"</text>
+        </inputEntry>
+        <inputEntry id="inputEntry_14skin">
+          <text>"normal"</text>
+        </inputEntry>
+        <outputEntry id="outputEntry_7type">
+          <text>"MattifyingLeaves Type"</text>
+        </outputEntry>
+      </rule>
+      <rule id="rule_29">
+        <inputEntry id="inputEntry_15honey">
+          <text>"BlutenHonig"</text>
+        </inputEntry>
+        <inputEntry id="inputEntry_16skin">
+          <text>"normal"</text>
+        </inputEntry>
+        <outputEntry id="outputEntry_8type">
+          <text>"MattifyingFloral Type"</text>
+        </outputEntry>
+      </rule>
+      <!-- Add more rules here if needed -->
+    </decisionTable>
+  </decision>
+
+
+  <decision id="personalised_choice" name="personalised_choice">
+    <informationRequirement>
+      <requiredInput href="#input_immunity_lvl" />
+    </informationRequirement>
+    <informationRequirement>
+      <requiredInput href="#input_individual_pref" />
+    </informationRequirement>
+    <decisionTable id="decisionTable_pc" hitPolicy="FIRST">
+      <input id="input_immunity_lvl" label="Immunity Level">
+        <inputExpression id="inputExpression_immunity_lvl" typeRef="string">
+          <text>ImmunityLevel</text>
+        </inputExpression>
+      </input>
+      <input id="input_individual_pref" label="Individual Preference">
+        <inputExpression id="inputExpression_individual_pref" typeRef="string">
+          <text>ProductType</text>
+        </inputExpression>
+      </input>
+      <output id="output_personalised_choice" label="Personalised Choice" name="Personalised Choice" typeRef="string" />
+      <rule id="rule_30">
+        <inputEntry id="inputEntry_1">
+          <text>"low"</text>
+        </inputEntry>
+        <inputEntry id="inputEntry_2">
+          <text>"HipoAllergenic-Floral Type"</text>
+        </inputEntry>
+        <outputEntry id="outputEntry_1">
+          <text>"HipoAllergenic-Floral ImmunityBooster"</text>
+        </outputEntry>
+      </rule>
+      <rule id="rule_31">
+        <inputEntry id="inputEntry_3">
+          <text>"low"</text>
+        </inputEntry>
+        <inputEntry id="inputEntry_4">
+          <text>"HipoAllergenic-Leaves Type"</text>
+        </inputEntry>
+        <outputEntry id="outputEntry_2">
+          <text>"HipoAllergenic-Leaves ImmunityBooster"</text>
+        </outputEntry>
+      </rule>
+      <rule id="rule_32">
+        <inputEntry id="inputEntry_5">
+          <text>"low"</text>
+        </inputEntry>
+        <inputEntry id="inputEntry_6">
+          <text>"Oilfree-Leave Type"</text>
+        </inputEntry>
+        <outputEntry id="outputEntry_3">
+          <text>"Oilfree-Leave Type ImmunityBooster"</text>
+        </outputEntry>
+      </rule>
+      <rule id="rule_33">
+        <inputEntry id="inputEntry_7">
+          <text>"low"</text>
+        </inputEntry>
+        <inputEntry id="inputEntry_8">
+          <text>"Oilfree-Floral Type"</text>
+        </inputEntry>
+        <outputEntry id="outputEntry_4">
+          <text>"Oilfree-Floral Type ImmunityBooster"</text>
+        </outputEntry>
+      </rule>
+      <rule id="rule_34">
+        <inputEntry id="inputEntry_9">
+          <text>"low"</text>
+        </inputEntry>
+        <inputEntry id="inputEntry_10">
+          <text>"HydroLeaves Type"</text>
+        </inputEntry>
+        <outputEntry id="outputEntry_5">
+          <text>"HydroLeaves Type ImmunityBooster"</text>
+        </outputEntry>
+      </rule>
+      <rule id="rule_35">
+        <inputEntry id="inputEntry_11">
+          <text>"low"</text>
+        </inputEntry>
+        <inputEntry id="inputEntry_12">
+          <text>"HydroFloral Type"</text>
+        </inputEntry>
+        <outputEntry id="outputEntry_6">
+          <text>"HydroFloral Type ImmunityBooster"</text>
+        </outputEntry>
+      </rule>
+      <rule id="rule_36">
+        <inputEntry id="inputEntry_13">
+          <text>"low"</text>
+        </inputEntry>
+        <inputEntry id="inputEntry_14">
+          <text>"MattifyingLeaves Type"</text>
+        </inputEntry>
+        <outputEntry id="outputEntry_7">
+          <text>"MattifyingLeaves Type ImmunityBooster"</text>
+        </outputEntry>
+      </rule>
+      <rule id="rule_37">
+        <inputEntry id="inputEntry_15">
+          <text>"low"</text>
+        </inputEntry>
+        <inputEntry id="inputEntry_16">
+          <text>"MattifyingFloral Type"</text>
+        </inputEntry>
+        <outputEntry id="outputEntry_8">
+          <text>"MattifyingFloral Type ImmunityBooster"</text>
+        </outputEntry>
+      </rule>
+      <rule id="rule_38">
+        <inputEntry id="inputEntry_1m">
+          <text>"medium"</text>
+        </inputEntry>
+        <inputEntry id="inputEntry_2m">
+          <text>"HipoAllergenic-Floral Type"</text>
+        </inputEntry>
+        <outputEntry id="outputEntry_1m">
+          <text>"HipoAllergenic-Floral ImmunityBooster"</text>
+        </outputEntry>
+      </rule>
+      <rule id="rule_39">
+        <inputEntry id="inputEntry_3m">
+          <text>"medium"</text>
+        </inputEntry>
+        <inputEntry id="inputEntry_4m">
+          <text>"HipoAllergenic-Leaves Type"</text>
+        </inputEntry>
+        <outputEntry id="outputEntry_2m">
+          <text>"HipoAllergenic-Leaves Suppliments"</text>
+        </outputEntry>
+      </rule>
+      <rule id="rule_40">
+        <inputEntry id="inputEntry_5m">
+          <text>"medium"</text>
+        </inputEntry>
+        <inputEntry id="inputEntry_6m">
+          <text>"Oilfree-Leave Type"</text>
+        </inputEntry>
+        <outputEntry id="outputEntry_3m">
+          <text>"Oilfree-Leave Type Suppliments"</text>
+        </outputEntry>
+      </rule>
+      <rule id="rule_41">
+        <inputEntry id="inputEntry_7m">
+          <text>"medium"</text>
+        </inputEntry>
+        <inputEntry id="inputEntry_8m">
+          <text>"Oilfree-Floral Type"</text>
+        </inputEntry>
+        <outputEntry id="outputEntry_4m">
+          <text>"Oilfree-Floral Type Suppliments"</text>
+        </outputEntry>
+      </rule>
+      <rule id="rule_42">
+        <inputEntry id="inputEntry_9m">
+          <text>"medium"</text>
+        </inputEntry>
+        <inputEntry id="inputEntry_10m">
+          <text>"HydroLeaves Type"</text>
+        </inputEntry>
+        <outputEntry id="outputEntry_5m">
+          <text>"HydroLeaves Type Suppliments"</text>
+        </outputEntry>
+      </rule>
+      <rule id="rule_43">
+        <inputEntry id="inputEntry_11m">
+          <text>"medium"</text>
+        </inputEntry>
+        <inputEntry id="inputEntry_12m">
+          <text>"HydroFloral Type"</text>
+        </inputEntry>
+        <outputEntry id="outputEntry_6m">
+          <text>"HydroFloral Type Suppliments"</text>
+        </outputEntry>
+      </rule>
+      <rule id="rule_44">
+        <inputEntry id="inputEntry_13m">
+          <text>"medium"</text>
+        </inputEntry>
+        <inputEntry id="inputEntry_14m">
+          <text>"MattifyingLeaves Type"</text>
+        </inputEntry>
+        <outputEntry id="outputEntry_7m">
+          <text>"MattifyingLeaves Type Suppliments"</text>
+        </outputEntry>
+      </rule>
+      <rule id="rule_45">
+        <inputEntry id="inputEntry_15m">
+          <text>"medium"</text>
+        </inputEntry>
+        <inputEntry id="inputEntry_16m">
+          <text>"MattifyingFloral Type"</text>
+        </inputEntry>
+        <outputEntry id="outputEntry_8m">
+          <text>"MattifyingFloral Type Suppliments"</text>
+        </outputEntry>
+      </rule>
+
+      <rule id="rule_46">
+        <inputEntry id="inputEntry_1h">
+          <text>"high"</text>
+        </inputEntry>
+        <inputEntry id="inputEntry_2h">
+          <text>"HipoAllergenic-Floral Type"</text>
+        </inputEntry>
+        <outputEntry id="outputEntry_1h">
+          <text>"HipoAllergenic-Floral Extra"</text>
+        </outputEntry>
+      </rule>
+      <rule id="rule_47">
+        <inputEntry id="inputEntry_3h">
+          <text>"high"</text>
+        </inputEntry>
+        <inputEntry id="inputEntry_4h">
+          <text>"HipoAllergenic-Leaves Type"</text>
+        </inputEntry>
+        <outputEntry id="outputEntry_2h">
+          <text>"HipoAllergenic-Leaves Extra"</text>
+        </outputEntry>
+      </rule>
+      <rule id="rule_48">
+        <inputEntry id="inputEntry_5h">
+          <text>"high"</text>
+        </inputEntry>
+        <inputEntry id="inputEntry_6h">
+          <text>"Oilfree-Leave Type"</text>
+        </inputEntry>
+        <outputEntry id="outputEntry_3h">
+          <text>"Oilfree-Leave Type Extra"</text>
+        </outputEntry>
+      </rule>
+      <rule id="rule_49">
+        <inputEntry id="inputEntry_7h">
+          <text>"high"</text>
+        </inputEntry>
+        <inputEntry id="inputEntry_8h">
+          <text>"Oilfree-Floral Type"</text>
+        </inputEntry>
+        <outputEntry id="outputEntry_4h">
+          <text>"Oilfree-Floral Type Extra"</text>
+        </outputEntry>
+      </rule>
+      <rule id="rule_50">
+        <inputEntry id="inputEntry_9h">
+          <text>"high"</text>
+        </inputEntry>
+        <inputEntry id="inputEntry_10h">
+          <text>"HydroLeaves Type"</text>
+        </inputEntry>
+        <outputEntry id="outputEntry_5h">
+          <text>"HydroLeaves Type Extra"</text>
+        </outputEntry>
+      </rule>
+      <rule id="rule_51">
+        <inputEntry id="inputEntry_11h">
+          <text>"high"</text>
+        </inputEntry>
+        <inputEntry id="inputEntry_12h">
+          <text>"HydroFloral Type"</text>
+        </inputEntry>
+        <outputEntry id="outputEntry_6h">
+          <text>"HydroFloral Type Extra"</text>
+        </outputEntry>
+      </rule>
+      <rule id="rule_52">
+        <inputEntry id="inputEntry_13h">
+          <text>"high"</text>
+        </inputEntry>
+        <inputEntry id="inputEntry_14h">
+          <text>"MattifyingLeaves Type"</text>
+        </inputEntry>
+        <outputEntry id="outputEntry_7h">
+          <text>"MattifyingLeaves Type Extra"</text>
+        </outputEntry>
+      </rule>
+      <rule id="rule_53">
+        <inputEntry id="inputEntry_15h">
+          <text>"high"</text>
+        </inputEntry>
+        <inputEntry id="inputEntry_16h">
+          <text>"MattifyingFloral Type"</text>
+        </inputEntry>
+        <outputEntry id="outputEntry_8h">
+          <text>"MattifyingFloral Type Extra"</text>
+        </outputEntry>
+      </rule>
+      <!-- Add more rules here if needed -->
+    </decisionTable>
+  </decision>
+
+
+   <decision id="product" name="product">
+    <informationRequirement>
+      <requiredInput href="#input_body_part" />
+    </informationRequirement>
+    <informationRequirement>
+      <requiredInput href="#input_personalised_choice" />
+    </informationRequirement>
+    <decisionTable id="decisionTable_p" hitPolicy="FIRST">
+      <input id="input_body_part" label="Body Part">
+        <inputExpression id="inputExpression_body_part" typeRef="string">
+          <text>BodyPart</text>
+        </inputExpression>
+      </input>
+      <input id="input_personalised_choice" label="Personalised Choice">
+        <inputExpression id="inputExpression_personalised_choice" typeRef="string">
+          <text>PersonalisedChoice</text>
+        </inputExpression>
+      </input>
+      <output id="output_product" label="Product" name="Product" typeRef="string" />
+      <rule id="rule_54">
+        <inputEntry id="inputEntry_1final">
+          <text>"Face"</text>
+        </inputEntry>
+        <inputEntry id="inputEntry_2final">
+          <text>"HipoAllergenic-Floral Type Extra"</text>
+        </inputEntry>
+        <outputEntry id="outputEntry_1final">
+          <text>"HoneyCreme AL++"</text>
+        </outputEntry>
+      </rule>
+      <rule id="rule_55">
+        <inputEntry id="inputEntry_3final">
+          <text>"Face"</text>
+        </inputEntry>
+        <inputEntry id="inputEntry_4final">
+          <text>"HipoAllergenic-Leaves Type Extra"</text>
+        </inputEntry>
+        <outputEntry id="outputEntry_2final">
+          <text>"HoneyCreme AL++"</text>
+        </outputEntry>
+      </rule>
+      <rule id="rule_56">
+        <inputEntry id="inputEntry_5final">
+          <text>"Face"</text>
+        </inputEntry>
+        <inputEntry id="inputEntry_6final">
+          <text>"MattifyingLeaves Type Extra"</text>
+        </inputEntry>
+        <outputEntry id="outputEntry_3final">
+          <text>"HoneyCreme Mattifying Effect"</text>
+        </outputEntry>
+      </rule>
+      <rule id="rule_57">
+        <inputEntry id="inputEntry_7final">
+          <text>"Face"</text>
+        </inputEntry>
+        <inputEntry id="inputEntry_8final">
+          <text>"MattifyingFloral Type Extra"</text>
+        </inputEntry>
+        <outputEntry id="outputEntry_4final">
+          <text>"HoneyCreme Mattifying Effect"</text>
+        </outputEntry>
+      </rule>
+      <rule id="rule_58">
+        <inputEntry id="inputEntry_9final">
+          <text>"Face"</text>
+        </inputEntry>
+        <inputEntry id="inputEntry_10final">
+          <text>"HydroFloral Type Extra"</text>
+        </inputEntry>
+        <outputEntry id="outputEntry_5final">
+          <text>"FaceCream HydroBoost"</text>
+        </outputEntry>
+      </rule>
+      <rule id="rule_59">
+        <inputEntry id="inputEntry_11final">
+          <text>"Face"</text>
+        </inputEntry>
+        <inputEntry id="inputEntry_12final">
+          <text>"HydroLeaves Type Extra"</text>
+        </inputEntry>
+        <outputEntry id="outputEntry_6final">
+          <text>"FaceCream HydroBoost Green"</text>
+        </outputEntry>
+      </rule>
+      <rule id="rule_60">
+        <inputEntry id="inputEntry_13final">
+          <text>"Face"</text>
+        </inputEntry>
+        <inputEntry id="inputEntry_14final">
+          <text>"Oilfree-Floral Type Extra"</text>
+        </inputEntry>
+        <outputEntry id="outputEntry_7final">
+          <text>"PoliCreme Oilyfree"</text>
+        </outputEntry>
+      </rule>
+      <rule id="rule_61">
+        <inputEntry id="inputEntry_15final">
+          <text>"Face"</text>
+        </inputEntry>
+        <inputEntry id="inputEntry_16final">
+          <text>"Oilfree-Leave Type Extra"</text>
+        </inputEntry>
+        <outputEntry id="outputEntry_8final">
+          <text>"PoliCreme Oilyfree"</text>
+        </outputEntry>
+      </rule>
+      <rule id="rule_62">
+        <inputEntry id="inputEntry_1fina">
+          <text>"Face"</text>
+        </inputEntry>
+        <inputEntry id="inputEntry_2fina">
+          <text>"HipoAllergenic-Floral Type Suppliments"</text>
+        </inputEntry>
+        <outputEntry id="outputEntry_1fina">
+          <text>"HoneyCreme AL++"</text>
+        </outputEntry>
+      </rule>
+      <rule id="rule_63">
+        <inputEntry id="inputEntry_3fina">
+          <text>"Face"</text>
+        </inputEntry>
+        <inputEntry id="inputEntry_4fina">
+          <text>"HipoAllergenic-Leaves Type Suppliments"</text>
+        </inputEntry>
+        <outputEntry id="outputEntry_2fina">
+          <text>"HoneyCreme AL++"</text>
+        </outputEntry>
+      </rule>
+      <rule id="rule_64">
+        <inputEntry id="inputEntry_5fina">
+          <text>"Face"</text>
+        </inputEntry>
+        <inputEntry id="inputEntry_6fina">
+          <text>"MattifyingLeaves Type Suppliments"</text>
+        </inputEntry>
+        <outputEntry id="outputEntry_3fina">
+          <text>"HoneyCreme Mattifying Effect"</text>
+        </outputEntry>
+      </rule>
+      <rule id="rule_65">
+        <inputEntry id="inputEntry_7fina">
+          <text>"Face"</text>
+        </inputEntry>
+        <inputEntry id="inputEntry_8fina">
+          <text>"MattifyingFloral Type Suppliments"</text>
+        </inputEntry>
+        <outputEntry id="outputEntry_4fina">
+          <text>"HoneyCreme Mattifying Effect"</text>
+        </outputEntry>
+      </rule>
+      <rule id="rule_66">
+        <inputEntry id="inputEntry_9fina">
+          <text>"Face"</text>
+        </inputEntry>
+        <inputEntry id="inputEntry_10fina">
+          <text>"HydroFloral Type Suppliments"</text>
+        </inputEntry>
+        <outputEntry id="outputEntry_5fina">
+          <text>"FaceCream HydroBoost"</text>
+        </outputEntry>
+      </rule>
+      <rule id="rule_67">
+        <inputEntry id="inputEntry_11fina">
+          <text>"Face"</text>
+        </inputEntry>
+        <inputEntry id="inputEntry_12fina">
+          <text>"HydroLeaves Type Suppliments"</text>
+        </inputEntry>
+        <outputEntry id="outputEntry_6fina">
+          <text>"FaceCream HydroBoost Green"</text>
+        </outputEntry>
+      </rule>
+      <rule id="rule_68">
+        <inputEntry id="inputEntry_13fina">
+          <text>"Face"</text>
+        </inputEntry>
+        <inputEntry id="inputEntry_14fina">
+          <text>"Oilfree-Floral Type Suppliments"</text>
+        </inputEntry>
+        <outputEntry id="outputEntry_7fina">
+          <text>"PoliCreme Oilyfree"</text>
+        </outputEntry>
+      </rule>
+      <rule id="rule_69">
+        <inputEntry id="inputEntry_15fina">
+          <text>"Face"</text>
+        </inputEntry>
+        <inputEntry id="inputEntry_16fina">
+          <text>"Oilfree-Leave Type Suppliments"</text>
+        </inputEntry>
+        <outputEntry id="outputEntry_8fina">
+          <text>"PoliCreme Oilyfree"</text>
+        </outputEntry>
+      </rule>
+      <rule id="rule_70">
+        <inputEntry id="inputEntry_1finaq">
+          <text>"Face"</text>
+        </inputEntry>
+        <inputEntry id="inputEntry_2finaq">
+          <text>"HipoAllergenic-Floral Type ImmunityBooster"</text>
+        </inputEntry>
+        <outputEntry id="outputEntry_1finaq">
+          <text>"HoneyCreme AL++"</text>
+        </outputEntry>
+      </rule>
+      <rule id="rule_71">
+        <inputEntry id="inputEntry_3finaq">
+          <text>"Face"</text>
+        </inputEntry>
+        <inputEntry id="inputEntry_4finaq">
+          <text>"HipoAllergenic-Leaves Type ImmunityBooster"</text>
+        </inputEntry>
+        <outputEntry id="outputEntry_2finaq">
+          <text>"HoneyCreme AL++"</text>
+        </outputEntry>
+      </rule>
+      <rule id="rule_72">
+        <inputEntry id="inputEntry_5finaq">
+          <text>"Face"</text>
+        </inputEntry>
+        <inputEntry id="inputEntry_6finaq">
+          <text>"MattifyingLeaves Type ImmunityBooster"</text>
+        </inputEntry>
+        <outputEntry id="outputEntry_3finaq">
+          <text>"HoneyCreme Mattifying Effect"</text>
+        </outputEntry>
+      </rule>
+      <rule id="rule_73">
+        <inputEntry id="inputEntry_7finaq">
+          <text>"Face"</text>
+        </inputEntry>
+        <inputEntry id="inputEntry_8finaq">
+          <text>"MattifyingFloral Type ImmunityBooster"</text>
+        </inputEntry>
+        <outputEntry id="outputEntry_4finaq">
+          <text>"HoneyCreme Mattifying Effect"</text>
+        </outputEntry>
+      </rule>
+      <rule id="rule_74">
+        <inputEntry id="inputEntry_9finaq">
+          <text>"Face"</text>
+        </inputEntry>
+        <inputEntry id="inputEntry_10finaq">
+          <text>"HydroFloral Type ImmunityBooster"</text>
+        </inputEntry>
+        <outputEntry id="outputEntry_5finaq">
+          <text>"FaceCream HydroBoost"</text>
+        </outputEntry>
+      </rule>
+      <rule id="rule_75">
+        <inputEntry id="inputEntry_11finaq">
+          <text>"Face"</text>
+        </inputEntry>
+        <inputEntry id="inputEntry_12finaq">
+          <text>"HydroLeaves Type ImmunityBooster"</text>
+        </inputEntry>
+        <outputEntry id="outputEntry_6finaq">
+          <text>"FaceCream HydroBoost Green"</text>
+        </outputEntry>
+      </rule>
+      <rule id="rule_76">
+        <inputEntry id="inputEntry_13finaq">
+          <text>"Face"</text>
+        </inputEntry>
+        <inputEntry id="inputEntry_14finaq">
+          <text>"Oilfree-Floral Type ImmunityBooster"</text>
+        </inputEntry>
+        <outputEntry id="outputEntry_7finaq">
+          <text>"PoliCreme Oilyfree"</text>
+        </outputEntry>
+      </rule>
+      <rule id="rule_77">
+        <inputEntry id="inputEntry_15finaq">
+          <text>"Face"</text>
+        </inputEntry>
+        <inputEntry id="inputEntry_16finaq">
+          <text>"Oilfree-Leave Type ImmunityBooster"</text>
+        </inputEntry>
+        <outputEntry id="outputEntry_8finaq">
+          <text>"PoliCreme Oilyfree"</text>
+        </outputEntry>
+      </rule>
+      <rule id="rule_78">
+        <inputEntry id="inputEntry_R1">
+          <text>"Lips"</text>
+        </inputEntry>
+        <inputEntry id="inputEntry_R2">
+          <text>"HipoAllergenic-Floral Type ImmunityBooster"</text>
+        </inputEntry>
+        <outputEntry id="outputEntry_R1">
+          <text>"Lipstick AL++"</text>
+        </outputEntry>
+      </rule>
+      <rule id="rule_79">
+        <inputEntry id="inputEntry_R3">
+          <text>"Lips"</text>
+        </inputEntry>
+        <inputEntry id="inputEntry_R4">
+          <text>"HipoAllergenic-Leaves Type ImmunityBooster"</text>
+        </inputEntry>
+        <outputEntry id="outputEntry_R2">
+          <text>"HoneyLips AL++"</text>
+        </outputEntry>
+      </rule>
+      <rule id="rule_80">
+        <inputEntry id="inputEntry_R5">
+          <text>"Lips"</text>
+        </inputEntry>
+        <inputEntry id="inputEntry_R6">
+          <text>"MattifyingLeaves Type ImmunityBooster"</text>
+        </inputEntry>
+        <outputEntry id="outputEntry_R3">
+          <text>"MattLipstick 550"</text>
+        </outputEntry>
+      </rule>
+      <rule id="rule_81">
+        <inputEntry id="inputEntry_R7">
+          <text>"Lips"</text>
+        </inputEntry>
+        <inputEntry id="inputEntry_R8">
+          <text>"MattifyingFloral Type ImmunityBooster"</text>
+        </inputEntry>
+        <outputEntry id="outputEntry_R4">
+          <text>"MattLipstick 340"</text>
+        </outputEntry>
+      </rule>
+      <rule id="rule_82">
+        <inputEntry id="inputEntry_R9">
+          <text>"Lips"</text>
+        </inputEntry>
+        <inputEntry id="inputEntry_R10">
+          <text>"HydroFloral Type ImmunityBooster"</text>
+        </inputEntry>
+        <outputEntry id="outputEntry_R5">
+          <text>"Sweetening Lipstick 623"</text>
+        </outputEntry>
+      </rule>
+      <rule id="rule_83">
+        <inputEntry id="inputEntry_R11">
+          <text>"Lips"</text>
+        </inputEntry>
+        <inputEntry id="inputEntry_R12">
+          <text>"HydroLeaves Type ImmunityBooster"</text>
+        </inputEntry>
+        <outputEntry id="outputEntry_R6">
+          <text>"Colorchanging Lipstick G-R"</text>
+        </outputEntry>
+      </rule>
+      <rule id="rule_84">
+        <inputEntry id="inputEntry_R13">
+          <text>"Lips"</text>
+        </inputEntry>
+        <inputEntry id="inputEntry_R14">
+          <text>"Oilfree-Floral Type ImmunityBooster"</text>
+        </inputEntry>
+        <outputEntry id="outputEntry_R7">
+          <text>"BeeUp lips"</text>
+        </outputEntry>
+      </rule>
+      <rule id="rule_85">
+        <inputEntry id="inputEntry_R15">
+          <text>"Lips"</text>
+        </inputEntry>
+        <inputEntry id="inputEntry_R16">
+          <text>"Oilfree-Leave Type ImmunityBooster"</text>
+        </inputEntry>
+        <outputEntry id="outputEntry_R8">
+          <text>"BEEUp lips 770"</text>
+        </outputEntry>
+      </rule>
+      <rule id="rule_86">
+        <inputEntry id="inputEntry_R1q">
+          <text>"Lips"</text>
+        </inputEntry>
+        <inputEntry id="inputEntry_R2q">
+          <text>"HipoAllergenic-Floral Type Suppliments"</text>
+        </inputEntry>
+        <outputEntry id="outputEntry_R1q">
+          <text>"Lipstick AL++"</text>
+        </outputEntry>
+      </rule>
+      <rule id="rule_87">
+        <inputEntry id="inputEntry_R3q">
+          <text>"Lips"</text>
+        </inputEntry>
+        <inputEntry id="inputEntry_R4q">
+          <text>"HipoAllergenic-Leaves Type Suppliments"</text>
+        </inputEntry>
+        <outputEntry id="outputEntry_R2q">
+          <text>"HoneyLips AL++"</text>
+        </outputEntry>
+      </rule>
+      <rule id="rule_88">
+        <inputEntry id="inputEntry_R5q">
+          <text>"Lips"</text>
+        </inputEntry>
+        <inputEntry id="inputEntry_R6q">
+          <text>"MattifyingLeaves Type Suppliments"</text>
+        </inputEntry>
+        <outputEntry id="outputEntry_R3q">
+          <text>"MattLipstick 550"</text>
+        </outputEntry>
+      </rule>
+      <rule id="rule_89">
+        <inputEntry id="inputEntry_R7q">
+          <text>"Lips"</text>
+        </inputEntry>
+        <inputEntry id="inputEntry_R8q">
+          <text>"MattifyingFloral Type Suppliments"</text>
+        </inputEntry>
+        <outputEntry id="outputEntry_R4q">
+          <text>"MattLipstick 340"</text>
+        </outputEntry>
+      </rule>
+      <rule id="rule_90">
+        <inputEntry id="inputEntry_R9q">
+          <text>"Lips"</text>
+        </inputEntry>
+        <inputEntry id="inputEntry_R10q">
+          <text>"HydroFloral Type Suppliments"</text>
+        </inputEntry>
+        <outputEntry id="outputEntry_R5q">
+          <text>"Sweetening Lipstick 623"</text>
+        </outputEntry>
+      </rule>
+      <rule id="rule_91">
+        <inputEntry id="inputEntry_R11q">
+          <text>"Lips"</text>
+        </inputEntry>
+        <inputEntry id="inputEntry_R12q">
+          <text>"HydroLeaves Type Suppliments"</text>
+        </inputEntry>
+        <outputEntry id="outputEntry_R6q">
+          <text>"Colorchanging Lipstick G-R"</text>
+        </outputEntry>
+      </rule>
+      <rule id="rule_92">
+        <inputEntry id="inputEntry_R13q">
+          <text>"Lips"</text>
+        </inputEntry>
+        <inputEntry id="inputEntry_R14q">
+          <text>"Oilfree-Floral Type Suppliments"</text>
+        </inputEntry>
+        <outputEntry id="outputEntry_R7q">
+          <text>"BeeUp lips"</text>
+        </outputEntry>
+      </rule>
+      <rule id="rule_93">
+        <inputEntry id="inputEntry_R15q">
+          <text>"Lips"</text>
+        </inputEntry>
+        <inputEntry id="inputEntry_R16q">
+          <text>"Oilfree-Leave Type Suppliments"</text>
+        </inputEntry>
+        <outputEntry id="outputEntry_R8q">
+          <text>"BEEUp lips 770"</text>
+        </outputEntry>
+      </rule>
+      <rule id="rule_94">
+        <inputEntry id="inputEntry_R1qw">
+          <text>"Lips"</text>
+        </inputEntry>
+        <inputEntry id="inputEntry_R2qw">
+          <text>"HipoAllergenic-Floral Type Extra"</text>
+        </inputEntry>
+        <outputEntry id="outputEntry_R1qw">
+          <text>"Lipstick AL++"</text>
+        </outputEntry>
+      </rule>
+      <rule id="rule_95">
+        <inputEntry id="inputEntry_R3qw">
+          <text>"Lips"</text>
+        </inputEntry>
+        <inputEntry id="inputEntry_R4qw">
+          <text>"HipoAllergenic-Leaves Type Extra"</text>
+        </inputEntry>
+        <outputEntry id="outputEntry_R2qw">
+          <text>"HoneyLips AL++"</text>
+        </outputEntry>
+      </rule>
+      <rule id="rule_96">
+        <inputEntry id="inputEntry_R5qw">
+          <text>"Lips"</text>
+        </inputEntry>
+        <inputEntry id="inputEntry_R6qw">
+          <text>"MattifyingLeaves Type Extra"</text>
+        </inputEntry>
+        <outputEntry id="outputEntry_R3qw">
+          <text>"MattLipstick 550"</text>
+        </outputEntry>
+      </rule>
+      <rule id="rule_97">
+        <inputEntry id="inputEntry_R7qw">
+          <text>"Lips"</text>
+        </inputEntry>
+        <inputEntry id="inputEntry_R8qw">
+          <text>"MattifyingFloral Type Extra"</text>
+        </inputEntry>
+        <outputEntry id="outputEntry_R4qw">
+          <text>"MattLipstick 340"</text>
+        </outputEntry>
+      </rule>
+      <rule id="rule_98">
+        <inputEntry id="inputEntry_R9qw">
+          <text>"Lips"</text>
+        </inputEntry>
+        <inputEntry id="inputEntry_R10qw">
+          <text>"HydroFloral Type Extra"</text>
+        </inputEntry>
+        <outputEntry id="outputEntry_R5qw">
+          <text>"Sweetening Lipstick 623"</text>
+        </outputEntry>
+      </rule>
+      <rule id="rule_99">
+        <inputEntry id="inputEntry_R11qw">
+          <text>"Lips"</text>
+        </inputEntry>
+        <inputEntry id="inputEntry_R12qw">
+          <text>"HydroLeaves Type Extra"</text>
+        </inputEntry>
+        <outputEntry id="outputEntry_R6qw">
+          <text>"Colorchanging Lipstick G-R"</text>
+        </outputEntry>
+      </rule>
+      <rule id="rule_100">
+        <inputEntry id="inputEntry_R13qw">
+          <text>"Lips"</text>
+        </inputEntry>
+        <inputEntry id="inputEntry_R14qw">
+          <text>"Oilfree-Floral Type Extra"</text>
+        </inputEntry>
+        <outputEntry id="outputEntry_R7qw">
+          <text>"BeeUp lips"</text>
+        </outputEntry>
+      </rule>
+      <rule id="rule_101">
+        <inputEntry id="inputEntry_R15qw">
+          <text>"Lips"</text>
+        </inputEntry>
+        <inputEntry id="inputEntry_R16qw">
+          <text>"Oilfree-Leave Type Extra"</text>
+        </inputEntry>
+        <outputEntry id="outputEntry_R8qw">
+          <text>"BEEUp lips 770"</text>
+        </outputEntry>
+      </rule>
+      <rule id="rule_102">
+        <inputEntry id="inputEntry_1finalaa">
+          <text>"Body"</text>
+        </inputEntry>
+        <inputEntry id="inputEntry_2finalaa">
+          <text>"HipoAllergenic-Floral Type Extra"</text>
+        </inputEntry>
+        <outputEntry id="outputEntry_1finalaa">
+          <text>"HoneyCreme AL++"</text>
+        </outputEntry>
+      </rule>
+      <rule id="rule_103">
+        <inputEntry id="inputEntry_3finalaa">
+          <text>"Body"</text>
+        </inputEntry>
+        <inputEntry id="inputEntry_4finalaa">
+          <text>"HipoAllergenic-Leaves Type Extra"</text>
+        </inputEntry>
+        <outputEntry id="outputEntry_2finalaa">
+          <text>"HoneyCreme AL++"</text>
+        </outputEntry>
+      </rule>
+      <rule id="rule_104">
+        <inputEntry id="inputEntry_5finalaa">
+          <text>"Body"</text>
+        </inputEntry>
+        <inputEntry id="inputEntry_6finalaa">
+          <text>"MattifyingLeaves Type Extra"</text>
+        </inputEntry>
+        <outputEntry id="outputEntry_3finalaa">
+          <text>"HoneyCreme Mattifying Effect"</text>
+        </outputEntry>
+      </rule>
+      <rule id="rule_105">
+        <inputEntry id="inputEntry_7finalaa">
+          <text>"Body"</text>
+        </inputEntry>
+        <inputEntry id="inputEntry_8finalaa">
+          <text>"MattifyingFloral Type Extra"</text>
+        </inputEntry>
+        <outputEntry id="outputEntry_4finalaa">
+          <text>"HoneyCreme Mattifying Effect"</text>
+        </outputEntry>
+      </rule>
+      <rule id="rule_106">
+        <inputEntry id="inputEntry_9finalaa">
+          <text>"Body"</text>
+        </inputEntry>
+        <inputEntry id="inputEntry_10finalaa">
+          <text>"HydroFloral Type Extra"</text>
+        </inputEntry>
+        <outputEntry id="outputEntry_5finalaa">
+          <text>"FaceCream HydroBoost"</text>
+        </outputEntry>
+      </rule>
+      <rule id="rule_107">
+        <inputEntry id="inputEntry_11finalaa">
+          <text>"Body"</text>
+        </inputEntry>
+        <inputEntry id="inputEntry_12finalaa">
+          <text>"HydroLeaves Type Extra"</text>
+        </inputEntry>
+        <outputEntry id="outputEntry_6finalaa">
+          <text>"FaceCream HydroBoost Green"</text>
+        </outputEntry>
+      </rule>
+      <rule id="rule_108">
+        <inputEntry id="inputEntry_13finalaa">
+          <text>"Body"</text>
+        </inputEntry>
+        <inputEntry id="inputEntry_14finalaa">
+          <text>"Oilfree-Floral Type Extra"</text>
+        </inputEntry>
+        <outputEntry id="outputEntry_7finalaa">
+          <text>"PoliCreme Oilyfree"</text>
+        </outputEntry>
+      </rule>
+      <rule id="rule_109">
+        <inputEntry id="inputEntry_15finalaa">
+          <text>"Body"</text>
+        </inputEntry>
+        <inputEntry id="inputEntry_16finalaa">
+          <text>"Oilfree-Leave Type Extra"</text>
+        </inputEntry>
+        <outputEntry id="outputEntry_8finalaa">
+          <text>"PoliCreme Oilyfree"</text>
+        </outputEntry>
+      </rule>
+      <rule id="rule_110">
+        <inputEntry id="inputEntry_1finaaaa">
+          <text>"Body"</text>
+        </inputEntry>
+        <inputEntry id="inputEntry_2finaaa">
+          <text>"HipoAllergenic-Floral Type Suppliments"</text>
+        </inputEntry>
+        <outputEntry id="outputEntry_1finaaa">
+          <text>"HoneyCreme AL++"</text>
+        </outputEntry>
+      </rule>
+      <rule id="rule_111">
+        <inputEntry id="inputEntry_3finaaa">
+          <text>"Body"</text>
+        </inputEntry>
+        <inputEntry id="inputEntry_4finaaa">
+          <text>"HipoAllergenic-Leaves Type Suppliments"</text>
+        </inputEntry>
+        <outputEntry id="outputEntry_2finaaa">
+          <text>"HoneyCreme AL++"</text>
+        </outputEntry>
+      </rule>
+      <rule id="rule_112">
+        <inputEntry id="inputEntry_5finaaa">
+          <text>"Body"</text>
+        </inputEntry>
+        <inputEntry id="inputEntry_6finaaa">
+          <text>"MattifyingLeaves Type Suppliments"</text>
+        </inputEntry>
+        <outputEntry id="outputEntry_3finaaa">
+          <text>"HoneyCreme Mattifying Effect"</text>
+        </outputEntry>
+      </rule>
+      <rule id="rule_113">
+        <inputEntry id="inputEntry_7finaaa">
+          <text>"Body"</text>
+        </inputEntry>
+        <inputEntry id="inputEntry_8finaaa">
+          <text>"MattifyingFloral Type Suppliments"</text>
+        </inputEntry>
+        <outputEntry id="outputEntry_4finaaa">
+          <text>"HoneyCreme Mattifying Effect"</text>
+        </outputEntry>
+      </rule>
+      <rule id="rule_114">
+        <inputEntry id="inputEntry_9finaaa">
+          <text>"Body"</text>
+        </inputEntry>
+        <inputEntry id="inputEntry_10finaaa">
+          <text>"HydroFloral Type Suppliments"</text>
+        </inputEntry>
+        <outputEntry id="outputEntry_5finaaa">
+          <text>"FaceCream HydroBoost"</text>
+        </outputEntry>
+      </rule>
+      <rule id="rule_115">
+        <inputEntry id="inputEntry_11finaaa">
+          <text>"Body"</text>
+        </inputEntry>
+        <inputEntry id="inputEntry_12finaaa">
+          <text>"HydroLeaves Type Suppliments"</text>
+        </inputEntry>
+        <outputEntry id="outputEntry_6finaaa">
+          <text>"FaceCream HydroBoost Green"</text>
+        </outputEntry>
+      </rule>
+      <rule id="rule_116">
+        <inputEntry id="inputEntry_13finaaa">
+          <text>"Body"</text>
+        </inputEntry>
+        <inputEntry id="inputEntry_14finaaa">
+          <text>"Oilfree-Floral Type Suppliments"</text>
+        </inputEntry>
+        <outputEntry id="outputEntry_7finaaa">
+          <text>"PoliCreme Oilyfree"</text>
+        </outputEntry>
+      </rule>
+      <rule id="rule_117">
+        <inputEntry id="inputEntry_15finaaa">
+          <text>"Body"</text>
+        </inputEntry>
+        <inputEntry id="inputEntry_16finaaa">
+          <text>"Oilfree-Leave Type Suppliments"</text>
+        </inputEntry>
+        <outputEntry id="outputEntry_8finaaa">
+          <text>"PoliCreme Oilyfree"</text>
+        </outputEntry>
+      </rule>
+      <rule id="rule_118">
+        <inputEntry id="inputEntry_1finaqaa">
+          <text>"Body"</text>
+        </inputEntry>
+        <inputEntry id="inputEntry_2finaqaa">
+          <text>"HipoAllergenic-Floral Type ImmunityBooster"</text>
+        </inputEntry>
+        <outputEntry id="outputEntry_1finaqaa">
+          <text>"HoneyCreme AL++"</text>
+        </outputEntry>
+      </rule>
+      <rule id="rule_119">
+        <inputEntry id="inputEntry_3finaqaa">
+          <text>"Body"</text>
+        </inputEntry>
+        <inputEntry id="inputEntry_4finaaaq">
+          <text>"HipoAllergenic-Leaves Type ImmunityBooster"</text>
+        </inputEntry>
+        <outputEntry id="outputEntry_2finaaaq">
+          <text>"HoneyCreme AL++"</text>
+        </outputEntry>
+      </rule>
+      <rule id="rule_120">
+        <inputEntry id="inputEntry_5finaqaa">
+          <text>"Body"</text>
+        </inputEntry>
+        <inputEntry id="inputEntry_6finaqaa">
+          <text>"MattifyingLeaves Type ImmunityBooster"</text>
+        </inputEntry>
+        <outputEntry id="outputEntry_3finaqaa">
+          <text>"HoneyCreme Mattifying Effect"</text>
+        </outputEntry>
+      </rule>
+      <rule id="rule_121">
+        <inputEntry id="inputEntry_7finaqaaa">
+          <text>"Body"</text>
+        </inputEntry>
+        <inputEntry id="inputEntry_8finaqaaa">
+          <text>"MattifyingFloral Type ImmunityBooster"</text>
+        </inputEntry>
+        <outputEntry id="outputEntry_4finaqaa">
+          <text>"HoneyCreme Mattifying Effect"</text>
+        </outputEntry>
+      </rule>
+      <rule id="rule_122">
+        <inputEntry id="inputEntry_9finaqaa">
+          <text>"Body"</text>
+        </inputEntry>
+        <inputEntry id="inputEntry_10finaqaa">
+          <text>"HydroFloral Type ImmunityBooster"</text>
+        </inputEntry>
+        <outputEntry id="outputEntry_5finaqaa">
+          <text>"BodyCream HydroBoost"</text>
+        </outputEntry>
+      </rule>
+      <rule id="rule_123">
+        <inputEntry id="inputEntry_11finaqaa">
+          <text>"Body"</text>
+        </inputEntry>
+        <inputEntry id="inputEntry_12finaqaa">
+          <text>"HydroLeaves Type ImmunityBooster"</text>
+        </inputEntry>
+        <outputEntry id="outputEntry_6finaqaa">
+          <text>"BodyCream HydroBoost Green"</text>
+        </outputEntry>
+      </rule>
+      <rule id="rule_124">
+        <inputEntry id="inputEntry_13finaqaa">
+          <text>"Body"</text>
+        </inputEntry>
+        <inputEntry id="inputEntry_14finaqaa">
+          <text>"Oilfree-Floral Type ImmunityBooster"</text>
+        </inputEntry>
+        <outputEntry id="outputEntry_7finaqaa">
+          <text>"PoliCreme Oilyfree"</text>
+        </outputEntry>
+      </rule>
+      <rule id="rule_125">
+        <inputEntry id="inputEntry_15finaqaa">
+          <text>"Body"</text>
+        </inputEntry>
+        <inputEntry id="inputEntry_16finaqaa">
+          <text>"Oilfree-Leave Type ImmunityBooster"</text>
+        </inputEntry>
+        <outputEntry id="outputEntry_8finaqaa">
+          <text>"PoliCreme Oilyfree"</text>
+        </outputEntry>
+      </rule>
+      <!-- Add more rules here if needed -->
+    </decisionTable>
+  </decision>
+
+
+  <dmndi:DMNDI>
+    <dmndi:DMNDiagram id="DMNDiagram_1">
+      <dmndi:DMNShape id="DMNShape_immunity_lvl" dmnElementRef="immunity_lvl">
+        <dc:Bounds x="136" y="68" width="180" height="80" />
+      </dmndi:DMNShape>
+      <dmndi:DMNShape id="DMNShape_individual_preference" dmnElementRef="individual_preference">
+        <dc:Bounds x="136" y="224" width="180" height="80" />
+      </dmndi:DMNShape>
+      <dmndi:DMNShape id="DMNShape_personalised_choice" dmnElementRef="personalised_choice">
+        <dc:Bounds x="136" y="380" width="180" height="80" />
+      </dmndi:DMNShape>
+      <dmndi:DMNShape id="DMNShape_product" dmnElementRef="product">
+        <dc:Bounds x="136" y="536" width="180" height="80" />
+      </dmndi:DMNShape>
+    </dmndi:DMNDiagram>
+  </dmndi:DMNDI>
+</definitions>
