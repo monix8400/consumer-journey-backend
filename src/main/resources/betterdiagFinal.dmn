@@ -1333,7 +1333,7 @@
           <text>"HydroFloral Type Suppliments"</text>
         </inputEntry>
         <outputEntry id="outputEntry_5finaaa">
-          <text>"FaceCream HydroBoost"</text>
+          <text>"BodyCream HydroBoost"</text>
         </outputEntry>
       </rule>
       <rule id="rule_115">
@@ -1344,7 +1344,7 @@
           <text>"HydroLeaves Type Suppliments"</text>
         </inputEntry>
         <outputEntry id="outputEntry_6finaaa">
-          <text>"FaceCream HydroBoost Green"</text>
+          <text>"BodyCream HydroBoost Green"</text>
         </outputEntry>
       </rule>
       <rule id="rule_116">
