@@ -23,7 +23,7 @@ public class ProductListController {
     @GetMapping(produces = MediaType.APPLICATION_JSON_VALUE)
     public List<HoneyProduct> getHoneyList() throws IOException {
         // Read JSON file
-        String jsonFilePath = new ClassPathResource("produktenliste.json").getFile().getPath();
+        String jsonFilePath = new ClassPathResource("list_of_products.json").getFile().getPath();
         byte[] jsonData = Files.readAllBytes(Path.of(jsonFilePath));
 
         // Convert JSON data to list of Honey objects
