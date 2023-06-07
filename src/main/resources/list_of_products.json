@@ -1,0 +1,87 @@
+[
+  {
+    "name": "Rapeseed Honey",
+    "description": "\"Rapeseed Honey\" is made from pure honey collected by bees from the nectar of rapeseed flowers. It has a mild taste and a light, golden-yellow color. It is commonly used as a spread on bread, to sweeten beverages, or in various recipes.",
+    "imageUrl": "assets/product_list_images/High_Quality_Produkt.ico"
+  },
+  {
+    "name": "Sunflower Honey",
+    "description": "\"Sunflower Honey\" is made from pure honey collected by bees from the nectar of sunflower flowers. It has a slightly sweet taste and a light golden to amber color. It is often used as a spread on bread, to sweeten dishes and beverages, or in baking. Sunflower honey is known for its mild and pleasant flavor.",
+    "imageUrl": "src/assets/High_Quality_Produkt.ico"
+  },
+  {
+    "name": "Acacia Honey",
+    "description": "\"Acacia Honey\" is made from pure honey collected by bees from the nectar of acacia tree flowers. It has a light, golden-yellow color and a mild, delicate taste. It is characterized by its liquid consistency and slow crystallization properties. Acacia honey is commonly used as a spread on bread and is also popular for sweetening tea, yogurt, or muesli. Due to its mild flavor, it is well-suited for baking and desserts. Acacia honey is considered one of the finest and most popular honey varieties due to its subtle aroma and pleasant sweetness.",
+    "imageUrl": "src/assets/High_Quality_Produkt.ico"
+  },
+  {
+    "name": "Linden Blossom Honey",
+    "description": "\"Linden Blossom Honey\" is made from pure honey collected by bees from the nectar of linden tree blossoms. It has a golden-yellow to light brown color and a characteristic, slightly minty taste with floral notes. It is known for its pleasant aroma and gentle sweetness. Linden blossom honey is often used as a spread on bread and is also suitable for sweetening tea or enhancing desserts. Due to its unique taste and soothing effects, linden blossom honey is highly appreciated as a specialty.",
+    "imageUrl": "src/assets/High_Quality_Produkt.ico"
+  },
+  {
+    "name": "Heather Honey",
+    "description": "\"Heather Honey\" is a honey produced by bees from the nectar of heather plants, especially heather or bell heather. It has a dark amber to brownish color and a strong, aromatic taste. Heather honey is often enjoyed as a spread on bread and can also be used in the kitchen to sweeten dishes and beverages. Due to its specific taste and rarity, heather honey is considered a special delicacy.",
+    "imageUrl": "src/assets/High_Quality_Produkt.ico"
+  },
+  {
+    "name": "Lavender Honey",
+    "description": "\"Lavender Honey\" is a honey produced by bees from the nectar of lavender flowers. It has a delicate golden to amber color and a fine, floral taste with a hint of sweetness. It is characterized by its aromatic flavor, reminiscent of the scent and taste of lavender. Lavender honey is often used as a spread on bread and can also be used to sweeten tea, yogurt, or desserts. It is popular due to its unique flavor and the floral character associated with lavender.",
+    "imageUrl": "src/assets/High_Quality_Produkt.ico"
+  },
+  {
+    "name": "Thyme Honey",
+    "description": "\"Thyme Honey\" is a honey with an intense, spicy taste and a golden to amber appearance. It is obtained from the nectar of thyme flowers and is excellent for sweetening tea, beverages, and desserts. Thyme honey is also valued for its potential health benefits and its use in natural medicine.",
+    "imageUrl": "src/assets/High_Quality_Produkt.ico"
+  },
+  {
+    "name": "Chestnut Honey",
+    "description": "\"Chestnut Honey\" is a honey produced by honeybees from the nectar of flowering chestnut trees. It has a dark amber color and a strong, slightly bitter taste. Chestnut honey is characterized by its spicy aroma and thick consistency. It is often used as a spread on bread and adds an intense flavor to dishes and beverages. Chestnut honey is appreciated for its unique taste and potential health benefits, as it can be rich in minerals and antioxidants.",
+    "imageUrl": "src/assets/High_Quality_Produkt.ico"
+  },
+  {
+    "name": "Cornflower Honey",
+    "description": "\"Cornflower Honey\" is a honey produced by honeybees from the nectar of cornflower plants. It has a golden-yellow to amber color and a mild, floral taste with subtle flower nuances. Cornflower honey is often used as a versatile spread and adds a pleasant sweetness to dishes and beverages. It is known for its delicate flavor and natural origin from cornflower blossoms.",
+    "imageUrl": "src/assets/High_Quality_Produkt.ico"
+  },
+  {
+    "name": "Manuka Honey",
+    "description": "\"Manuka Honey\" comes from New Zealand and is obtained from the nectar of Manuka flowers. It has a dark color and an intense flavor with spicy notes. Manuka honey is known for its health benefits and antimicrobial properties.",
+    "imageUrl": "src/assets/High_Quality_Produkt.ico"
+  },
+  {
+    "name": "Propolis",
+    "description": "\"Propolis\" is a resinous substance collected by honeybees from tree buds and bark. It is used in the beehive to seal gaps and protect the hive from bacteria and diseases. Propolis is also used in various health products due to its potential antibacterial, antiviral, and anti-inflammatory properties.",
+    "imageUrl": "src/assets/High_Quality_Produkt.ico"
+  },
+  {
+    "name": "Bee Pollen",
+    "description": "\"Bee Pollen\" refers to small, protein-rich granules collected by bees from flowers. They are an important source of protein for bees and are also consumed as a dietary supplement for their potential health benefits, such as strengthening the immune system.",
+    "imageUrl": "src/assets/High_Quality_Produkt.ico"
+  },
+  {
+    "name": "Royal Jelly",
+    "description": "\"Royal Jelly\" is a creamy, yellowish substance produced by bees to feed their queen. It is rich in nutrients and is often used as a dietary supplement, as it is believed to provide an energy boost and improve overall health.",
+    "imageUrl": "src/assets/High_Quality_Produkt.ico"
+  },
+  {
+    "name": "Beeswax",
+    "description": "\"Beeswax\" is used by honeybees to construct honeycombs. It is also used in various products such as candles, cosmetics, and skincare products due to its moisturizing and protective properties.",
+    "imageUrl": "src/assets/High_Quality_Produkt.ico"
+  },
+  {
+    "name": "Honey Vinegar",
+    "description": "\"Honey Vinegar\" is made by fermenting honey. It has a mild, sweet, and slightly acidic taste. Honey vinegar is often used as an ingredient in salad dressings, marinades, or as a general vinegar for culinary purposes.",
+    "imageUrl": "src/assets/High_Quality_Produkt.ico"
+  },
+  {
+    "name": "Mead",
+    "description": "\"Mead,\" also known as honey wine, is an alcoholic beverage made by fermenting honey. It has a sweet taste and a slight alcoholic note. Mead has been enjoyed in various cultures for a long time and is now popular in the craft beer and wine world as well.",
+    "imageUrl": "src/assets/High_Quality_Produkt.ico"
+  },
+  {
+    "name": "Honey Soap",
+    "description": "\"Honey Soap\" is a type of soap that contains honey as one of its main ingredients. It is known for its moisturizing and nourishing properties, making it suitable for sensitive or dry skin. Honey soap often has a pleasant scent and produces a creamy lather.",
+    "imageUrl": "src/assets/High_Quality_Produkt.ico"
+  }
+]

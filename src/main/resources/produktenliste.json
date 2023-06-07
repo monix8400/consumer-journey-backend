@@ -1,0 +1,97 @@
+[
+  {
+    "name": "Rapshonig",
+    "description": "\"Rapshonig\" besteht aus reinem Honig, der von Bienen aus dem Nektar der Rapsblüten gewonnen wird. \nRapshonig hat einen milden Geschmack und eine helle, goldgelbe Farbe. \nEr wird häufig als Brotaufstrich, zum Süßen von Getränken oder in verschiedenen Rezepten verwendet.",
+    "imageUrl": "assets/product_list_images/Rapshonig.png"
+  },
+  {
+    "name": "Sonnenblumenhonig",
+    "description": "\"Sonnenblumenhonig\" besteht aus reinem Honig, der von Bienen aus dem Nektar der Sonnenblumenblüten gewonnen wird. \nSonnenblumenhonig hat einen leicht süßen Geschmack und eine hellgoldene bis bernsteinfarbene Farbe. \nEr wird oft als Brotaufstrich, zum Süßen von Speisen und Getränken oder auch in der Backküche verwendet. \nSonnenblumenhonig zeichnet sich durch seinen milden und angenehmen Geschmack aus.",
+    "imageUrl": "assets/product_list_images/Sonnenblumenhonig.png"
+  },
+  {
+    "name": "Akazienhonig",
+    "description": "\"Akazienhonig\" besteht aus reinem Honig, der von Bienen aus dem Nektar der Blüten des Akazienbaums gewonnen wird. \nAkazienhonig hat eine helle, goldgelbe Farbe und einen milden, delikaten Geschmack. \nEr zeichnet sich durch seine flüssige Konsistenz und seine langsam kristallisierende Eigenschaft aus. \nAkazienhonig wird häufig als Brotaufstrich verwendet und ist auch beliebt zum Süßen von Tee, Joghurt oder Müsli. \nAufgrund seines milden Geschmacks eignet er sich gut zum Backen und für Desserts. \nAkazienhonig gilt als einer der feinsten und beliebtesten Honigsorten aufgrund seines subtilen Aromas und seiner angenehmen Süße.",
+    "imageUrl": "assets/product_list_images/Akazienhonig.png"
+  },
+  {
+    "name": "Lindenblütenhonig",
+    "description": "\"Lindenblütenhonig\" besteht aus reinem Honig, der von Bienen aus dem Nektar der Blüten des Lindenbaums gewonnen wird. \nLindenblütenhonig hat eine goldgelbe bis hellbraune Farbe und einen charakteristischen, leicht minzigen Geschmack mit floralen Noten. \nEr ist bekannt für seinen angenehmen Duft und seine sanfte Süße. \nLindenblütenhonig wird gerne als Brotaufstrich verwendet und eignet sich auch gut zum Süßen von Tee oder zum Verfeinern von Desserts. \nAufgrund seines besonderen Geschmacks und seiner wohltuenden Wirkung wird Lindenblütenhonig oft als Spezialität geschätzt.",
+    "imageUrl": "assets/product_list_images/Lindenblütenhonig.jpg"
+  },
+  {
+    "name": "Heidehonig",
+    "description": "\"Heidehonig\" ist ein Honig, der von Bienen aus dem Nektar der Heidepflanzen gewonnen wird, insbesondere von der Besenheide oder der Glockenheide. \nHeidehonig hat eine dunkle, bernsteinfarbene bis bräunliche Farbe und einen kräftigen, aromatischen Geschmack. \nHeidehonig wird oft als Brotaufstrich genossen und kann auch in der Küche zum Süßen von Speisen und Getränken verwendet werden. \nAufgrund seines spezifischen Geschmacks und seiner Seltenheit gilt Heidehonig als besondere Delikatesse.",
+    "imageUrl": "assets/product_list_images/Heidehonig.png"
+  },
+  {
+    "name": "Lavendelhonig",
+    "description": "\"Lavendelhonig\" ist ein Honig, der von Bienen aus dem Nektar der Lavendelblüten gewonnen wird. \nLavendelhonig hat eine zartgoldene bis bernsteinfarbene Farbe und einen feinen, blumigen Geschmack mit leichter Süße. \nEr zeichnet sich durch sein aromatisches Aroma aus, das an den Duft und den Geschmack von Lavendel erinnert. \nLavendelhonig wird oft als Brotaufstrich verwendet und kann auch zum Süßen von Tee, Joghurt oder Desserts dienen. \nEr ist beliebt aufgrund seines einzigartigen Geschmacks und des floralen Charakters, der mit dem Lavendel verbunden wird.",
+    "imageUrl": "assets/product_list_images/Lavendelhonig.jpg"
+  },
+  {
+    "name": "Thymianhonig",
+    "description": "\"Thymianhonig\" ist ein Honig mit intensivem, würzigem Geschmack und goldenem bis bernsteinfarbenem Aussehen. \nEr wird aus dem Nektar der Thymianblüten gewonnen und eignet sich hervorragend zum Süßen von Tee, Getränken und Desserts. \nThymianhonig wird auch für seine potenziellen gesundheitlichen Vorteile und seine Verwendung in der Naturheilkunde geschätzt.",
+    "imageUrl": "assets/product_list_images/Thymianhonig.jpg"
+  },
+  {
+    "name": "Edelkastanienhonig",
+    "description": "\"Edelkastanienhonig\" ist ein Honig, der von Honigbienen aus dem Nektar der Blüten der Edelkastanienbäume gewonnen wird. \nEr hat eine dunkle Bernsteinfarbe und einen kräftigen, leicht bitteren Geschmack. \nEdelkastanienhonig zeichnet sich durch sein würziges Aroma und seine dickflüssige Konsistenz aus. \nEr wird häufig als Brotaufstrich verwendet und verleiht Speisen und Getränken einen intensiven Geschmack. \nEdelkastanienhonig wird aufgrund seines einzigartigen Geschmacks und seiner gesundheitlichen Vorteile geschätzt, da er reich an Mineralien und Antioxidantien sein kann.",
+    "imageUrl": "assets/product_list_images/Edelkastanienhonig.jpg"
+  },
+  {
+    "name": "Kornblumenhonig",
+    "description": "\"Kornblumenhonig\" ist ein Honig, der von Honigbienen aus dem Nektar der Blüten der Kornblumenpflanze gewonnen wird. \nEr hat eine goldgelbe bis bernsteinfarbene Farbe und einen milden, floralen Geschmack mit subtilen Nuancen von Blüten. \nKornblumenhonig wird oft als vielseitiger Brotaufstrich verwendet und verleiht Speisen und Getränken eine angenehme Süße. \nEr ist bekannt für seinen zarten Geschmack und seine natürliche Herkunft von den Blüten der Kornblume.",
+    "imageUrl": "assets/product_list_images/Kornblumenhonig.jpg"
+  },
+  {
+    "name": "Manuka-Honig",
+    "description": "\"Manuka-Honig\" stammt aus Neuseeland und wird aus dem Nektar der Manuka-Blüten gewonnen. \nEr hat eine dunkle Farbe und einen intensiven Geschmack mit würzigen Noten. \nManuka-Honig ist für seine gesundheitlichen Vorteile und antimikrobiellen Eigenschaften bekannt.",
+    "imageUrl": "assets/product_list_images/Manuka-Honig.png"
+  },
+  {
+    "name": "Propolis",
+    "description": "Propolis ist eine harzartige Substanz, die von Honigbienen aus Baumknospen und Rinden gesammelt wird. \nEs wird im Bienenstock verwendet, um Lücken abzudichten und den Stock vor Bakterien und Krankheiten zu schützen. \nPropolis wird auch in verschiedenen Gesundheitsprodukten eingesetzt, aufgrund seiner potenziellen antibakteriellen, antiviralen und entzündungshemmenden Eigenschaften.",
+    "imageUrl": "assets/product_list_images/Propolis.jpg"
+  },
+  {
+    "name": "Bienenpollen",
+    "description": "Bienenpollen sind kleine, proteinreiche Kügelchen, die von Bienen von Blüten gesammelt werden. \nSie sind eine wichtige Proteinquelle für Bienen und werden auch als Nahrungsergänzungsmittel für ihre potenziellen gesundheitlichen Vorteile, wie z. B. die Stärkung des Immunsystems, konsumiert.",
+    "imageUrl": "assets/product_list_images/Bienenpollen.jpg"
+  },
+  {
+    "name": "Gelee Royale",
+    "description": "Gelee Royale ist eine cremige, gelbliche Substanz, die von den Bienen zur Fütterung ihrer Königin produziert wird. \nEs ist reich an Nährstoffen und wird oft als Nahrungsergänzungsmittel verwendet, da es als potenzieller Energieschub und zur Verbesserung der allgemeinen Gesundheit angesehen wird.",
+    "imageUrl": "assets/product_list_images/Gelee_Royale.jpg"
+  },
+  {
+    "name": "Wachs",
+    "description": "Bienenwachs wird von Honigbienen zur Konstruktion von Bienenwaben verwendet. \nEs wird auch in verschiedenen Produkten wie Kerzen, Kosmetika und Pflegeprodukten eingesetzt, aufgrund seiner feuchtigkeitsspendenden und schützenden Eigenschaften.",
+    "imageUrl": "assets/product_list_images/Wachs.jpg"
+  },
+  {
+    "name": "Honigessig",
+    "description": "Honigessig wird durch Fermentation von Honig hergestellt. \nEr hat einen milden, süßen und leicht säuerlichen Geschmack. \nHonigessig wird oft als Zutat in Salatdressings, Marinaden und zur allgemeinen Verwendung als Essig verwendet.",
+    "imageUrl": "assets/product_list_images/Honigessig.jpg"
+  },
+  {
+    "name": "Met",
+    "description": "Met, auch Honigwein genannt, ist ein alkoholisches Getränk, das durch Fermentation von Honig hergestellt wird. \nEr hat einen süßen Geschmack und eine leicht alkoholische Note. \nMet wird seit langem in verschiedenen Kulturen genossen und ist heute auch in der Craft-Bier- und Weinwelt beliebt.",
+    "imageUrl": "assets/product_list_images/Met.png"
+  },
+  {
+    "name": "Honigbonbons",
+    "description": "Honigbonbons sind Bonbons oder Pastillen, die Honig enthalten. \nSie haben einen süßen Geschmack und werden oft zur Linderung von Halsschmerzen oder einfach als köstliche Leckerei genossen.",
+    "imageUrl": "assets/product_list_images/Honigbonbons.jpg"
+  },
+  {
+    "name": "Honigseife",
+    "description": "Honigseife wird durch Zugabe von Honig zum Seifenherstellungsprozess hergestellt. \nHonigseife bietet feuchtigkeitsspendende und pflegende Eigenschaften für die Haut und wird oft für ihre sanfte Reinigung und Hautpflege verwendet.",
+    "imageUrl": "assets/product_list_images/Honigseife.jpg"
+  },
+  {
+    "name": "Honigsenf",
+    "description": "Honigsenf ist eine köstliche Mischung aus Honig und Senf. \nEs ist ein beliebter Brotaufstrich, Dip oder Dressing für Salate und bietet eine süß-scharfe Geschmackskombination.\nHonigsenf ist eine köstliche Mischung aus Honig und Senf. \nEs ist ein beliebter Brotaufstrich, Dip oder Dressing für Salate und bietet eine süß-scharfe Geschmackskombination.",
+    "imageUrl": "assets/product_list_images/Honigsenf.png"
+  }
+]
